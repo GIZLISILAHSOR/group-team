@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yetkili Girişi ve Sohbet Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Yönetici ve Kullanıcı Girişi -->
+    <div id="loginScreen" class="login-screen">
+        <h2>Giriş Yap</h2>
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" placeholder="Kullanıcı Adı">
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" placeholder="Şifre">
+        <button id="loginButton">Giriş Yap</button>
+        <p id="loginError" style="color: red; display: none;">Yanlış kullanıcı adı veya şifre!</p>
+    </div>
+
+    <!-- Sohbet Bölümü -->
+    <div id="chatScreen" class="chat-screen" style="display:none;">
+        <header>
+            <h1>Grup Sohbeti</h1>
+            <button id="logoutButton">Çıkış Yap</button>
+        </header>
+
+        <section id="sohbet">
+            <div id="sohbetKutusu">
+                <div class="mesaj">Admin: Merhaba, hoş geldiniz!</div>
+            </div>
+            <textarea id="mesajInput" placeholder="Mesaj yazın..."></textarea>
+            <button id="sendButton">Gönder</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Grup Sohbeti - Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
